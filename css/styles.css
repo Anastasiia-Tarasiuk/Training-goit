@@ -1,0 +1,194 @@
+/* по умолчанию */
+:root {
+    --color-accent: #2196F3;
+    --color-main: #757575;
+    --color-dark: #212121;
+    --color-white: #FFFFFF;
+    --color-white-opacity: rgba(255, 255, 255, 0.6);
+    --color-black: #000000;
+    --color-bg: #2F303A;
+    --color-button-hover: #188CE8;
+
+}
+
+body {
+    font-family: "Roboto", "sans serif";
+}
+
+a {
+    text-decoration: none;
+    margin: 0;   
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+address {
+    font-style: normal;    
+}
+
+.section {
+    margin: 0 200px; 
+    padding: 94px 15px;
+    width: 1200px;   
+}
+
+/* хедер */
+
+.header {
+    display: flex;
+}
+
+.logo {
+    color: var(--color-accent);
+    
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.studio {
+    color: var(--color-black);
+}
+
+.pages, 
+.contacts {
+    color: var(--color-main);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    
+    display: flex;
+
+}
+
+.pages {
+    color: var(--color-dark);
+}
+
+.pages-link:hover,
+.pages-link:focus, 
+.contacts-link:hover,
+.contacts-link:focus {
+    color: var(--color-accent);
+}
+
+/* герой */
+.hero {
+    background-color: var(--color-bg);
+}
+
+h1 {
+    color: var(--color-white);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.button {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--color-button-hover);
+}
+
+/* преимущества */
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.benefits-title {
+    color: var(--color-dark);
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.benefits-text {
+    color: var(--color-main);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* чем мы занимаемся */
+.work-title,
+.team-title {
+    color: var(--color-dark);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.member-title, 
+.member-text {
+    color:var(--color-dark);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+}
+
+.member-text {
+    color: var(--color-main);
+    font-weight: 400;
+}
+
+
+/* футер */
+.footer {
+    background-color: var(--color-bg);
+}
+
+.footer-studio {
+    color: var(--color-white);
+}
+
+.address-link {
+    color: var(--color-white);
+    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.mail,
+.tel {
+    color: var(--color-white-opacity);
+}
